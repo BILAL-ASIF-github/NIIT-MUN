@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Secretariat — NIITMUN 2026</title>
+  <meta name="description" content="Get in touch with the Secretariat and Organizing Committee of NIITMUN 2026 for inquiries regarding registration, committees, sponsorship, and logistics at NASTP Delta Lahore.">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="shortcut icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+
+  <!-- Google Fonts: Cinzel + Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    /* In-page styling refinements for Contact Page */
+    .contact-section-header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .contact-subheading {
+      color: var(--text-secondary);
+      font-size: 1.25rem;
+      font-weight: 300;
+      margin-top: 10px;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      max-width: 1100px;
+      margin: 0 auto 50px;
+    }
+
+    .official-channels-box {
+      max-width: 800px;
+      margin: 0 auto 60px;
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      border-radius: 20px;
+      padding: 24px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+      backdrop-filter: blur(12px);
+      text-align: center;
+    }
+
+    .channel-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--text-primary);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.05rem;
+      transition: all 0.3s ease;
+    }
+
+    .channel-item:hover {
+      color: var(--gold-light);
+      transform: translateY(-2px);
+    }
+
+    .channel-icon-pill {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: rgba(201, 168, 76, 0.15);
+      border: 1px solid rgba(201, 168, 76, 0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold);
+    }
+
+    .contact-icons {
+      display: flex;
+      flex-direction: row;
+      gap: 16px;
+      margin-top: 25px;
+      justify-content: center;
+    }
+
+    .contact-icon-link {
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .contact-icon-link:hover {
+      background: var(--gold);
+      color: #0a1628;
+      border-color: var(--gold);
+      transform: translateY(-3px);
+      box-shadow: 0 4px 15px rgba(201, 168, 76, 0.4);
+    }
+
+    .contact-icon-link.whatsapp-link:hover {
+      background: #25d366;
+      border-color: #25d366;
+      color: #ffffff;
+      box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+    }
+
+    /* General Info / Venue Section */
+    .venue-info-section {
+      background: var(--bg-secondary);
+      border-top: 1px solid var(--glass-border);
+      border-bottom: 1px solid var(--glass-border);
+      padding: 90px 0;
+      position: relative;
+      z-index: 1;
+    }
+
+    .venue-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: 45px;
+      align-items: center;
+    }
+
+    .venue-details {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .venue-title {
+      font-family: var(--font-heading);
+      font-size: clamp(1.8rem, 3vw, 2.3rem);
+      line-height: 1.3;
+      color: var(--text-primary);
+    }
+
+    .venue-affiliation {
+      font-size: 1.15rem;
+      color: var(--gold-light);
+      font-weight: 500;
+      line-height: 1.5;
+    }
+
+    .venue-address-box {
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      border-left: 4px solid var(--gold);
+      border-radius: 12px;
+      padding: 24px;
+      margin: 10px 0;
+      backdrop-filter: blur(10px);
+    }
+
+    .venue-address-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 14px;
+      color: var(--text-secondary);
+      font-size: 0.98rem;
+      line-height: 1.5;
+    }
+
+    .venue-address-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .venue-address-item svg {
+      color: var(--gold);
+      flex-shrink: 0;
+      margin-top: 3px;
+    }
+
+    .map-card {
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+      position: relative;
+    }
+
+    .map-header {
+      padding: 14px 20px;
+      background: rgba(10, 22, 40, 0.85);
+      border-bottom: 1px solid var(--glass-border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .map-header-title {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .map-header-title svg {
+      color: var(--gold);
+    }
+
+    .map-link {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--gold);
+    }
+
+    .map-link:hover {
+      color: var(--gold-light);
+      text-decoration: underline;
+    }
+
+    .map-container {
+      width: 100%;
+      height: 380px;
+    }
+
+    .map-container iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    @media (max-width: 992px) {
+      .venue-grid {
+        grid-template-columns: 1fr;
+      }
+      .contact-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 650px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+        max-width: 420px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ======================================================================
+       Translucent Ticker Bar with Live Early Bird Countdown
+       ====================================================================== -->
+  <div class="ticker-bar">
+    <div class="ticker-content">
+      <span>★ EARLY BIRD DISCOUNT ENDS IN: <strong class="ribbon-countdown-badge"><span class="ribbon-days">--</span>d <span class="ribbon-hours">--</span>h <span class="ribbon-mins">--</span>m <span class="ribbon-secs">--</span>s</strong> ★ REGISTER NOW FOR DISCOUNTED RATES ★ 4–6 DECEMBER 2026 ★ NASTP DELTA LAHORE ★&nbsp;&nbsp;&nbsp;</span>
+      <span>★ EARLY BIRD DISCOUNT ENDS IN: <strong class="ribbon-countdown-badge"><span class="ribbon-days">--</span>d <span class="ribbon-hours">--</span>h <span class="ribbon-mins">--</span>m <span class="ribbon-secs">--</span>s</strong> ★ REGISTER NOW FOR DISCOUNTED RATES ★ 4–6 DECEMBER 2026 ★ NASTP DELTA LAHORE ★&nbsp;&nbsp;&nbsp;</span>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       Translucent Glassmorphic Navbar
+       ====================================================================== -->
+  <nav class="navbar">
+    <div class="navbar-inner container">
+      <a href="index.html" class="nav-logo" aria-label="NIITMUN Homepage">
+        <img src="NIITMUN OFFICIAL LOGO.png" alt="NIITMUN Official Logo">
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="agendas.html">Committees &amp; Agendas</a></li>
+        <li><a href="index.html#socials">Socials</a></li>
+        <li><a href="sponsors.html">Sponsors</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="https://www.instagram.com/niit.mun" target="_blank" rel="noopener noreferrer" class="nav-icon-link" aria-label="Instagram" title="Follow @niit.mun">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+        <a href="mailto:debate@niit.edu.pk" class="nav-icon-link" aria-label="Email Us" title="debate@niit.edu.pk">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+        <a href="index.html#register" class="btn-primary nav-cta">Register Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ======================================================================
+       Page Hero Section
+       ====================================================================== -->
+  <section class="page-hero" style="background-image: url('BGs/bg2.jpg')">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <h1 class="page-hero-title" data-animate="fade-up">Contact Us</h1>
+      <p class="page-hero-subtitle" data-animate="fade-up">For any queries regarding NIITMUN 2026</p>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       Main Content: Contact Section
+       ====================================================================== -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-section-header" data-animate="fade-up">
+        <span class="section-badge">Secretariat Support</span>
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="contact-subheading">For Any Inquiries &amp; Assistance</p>
+      </div>
+
+      <!-- Official Digital Channels -->
+      <div class="official-channels-box" data-animate="fade-up">
+        <a href="https://www.instagram.com/niit.mun" target="_blank" rel="noopener noreferrer" class="channel-item">
+          <div class="channel-icon-pill">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </div>
+          <span>@niit.mun (Official Instagram)</span>
+        </a>
+        <a href="mailto:debate@niit.edu.pk" class="channel-item">
+          <div class="channel-icon-pill">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <span>debate@niit.edu.pk</span>
+        </a>
+      </div>
+
+      <!-- Three Contact Cards in 3-column Grid -->
+      <div class="contact-grid">
+        <!-- Card 1: Ali Raza -->
+        <div class="contact-card" data-animate="fade-up">
+          <div class="contact-avatar">AR</div>
+          <h3 class="contact-name">Ali Raza</h3>
+          <p class="contact-role">President NIIT Literary Society</p>
+          <div style="display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; width: 100%;">
+            <a href="https://wa.me/923154295716" target="_blank" rel="noopener noreferrer" class="contact-btn-whatsapp">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.79 14.07c-.24.67-1.39 1.29-1.92 1.37-.51.08-1.17.11-3.79-.97-3.35-1.39-5.48-4.8-5.65-5.02-.17-.22-1.37-1.82-1.37-3.48 0-1.65.87-2.47 1.18-2.81.31-.34.68-.42.9-.42.23 0 .45.01.65.02.21.01.49-.08.77.58.28.67.97 2.37 1.05 2.54.08.17.14.37.03.59-.11.22-.17.36-.34.56-.17.2-.36.45-.51.61-.17.17-.35.36-.15.7.2.34.89 1.47 1.91 2.38 1.31 1.17 2.42 1.53 2.76 1.7.34.17.54.14.74-.08.2-.23.86-.99 1.09-1.34.23-.34.46-.28.77-.17.31.11 1.99.94 2.33 1.11.34.17.57.26.65.4.08.14.08.82-.16 1.49z"/></svg>
+              Chat on WhatsApp
+            </a>
+            <a href="mailto:debate@niit.edu.pk" class="contact-btn-email">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              Email Secretariat
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 2: Bilal Asif -->
+        <div class="contact-card" data-animate="fade-up">
+          <div class="contact-avatar">BA</div>
+          <h3 class="contact-name">Bilal Asif</h3>
+          <p class="contact-role">UDG / Event Head</p>
+          <a href="https://wa.me/923424390904" target="_blank" rel="noopener noreferrer" class="contact-btn-whatsapp">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.79 14.07c-.24.67-1.39 1.29-1.92 1.37-.51.08-1.17.11-3.79-.97-3.35-1.39-5.48-4.8-5.65-5.02-.17-.22-1.37-1.82-1.37-3.48 0-1.65.87-2.47 1.18-2.81.31-.34.68-.42.9-.42.23 0 .45.01.65.02.21.01.49-.08.77.58.28.67.97 2.37 1.05 2.54.08.17.14.37.03.59-.11.22-.17.36-.34.56-.17.2-.36.45-.51.61-.17.17-.35.36-.15.7.2.34.89 1.47 1.91 2.38 1.31 1.17 2.42 1.53 2.76 1.7.34.17.54.14.74-.08.2-.23.86-.99 1.09-1.34.23-.34.46-.28.77-.17.31.11 1.99.94 2.33 1.11.34.17.57.26.65.4.08.14.08.82-.16 1.49z"/></svg>
+            Chat on WhatsApp
+          </a>
+        </div>
+
+        <!-- Card 3: Manahil Amir -->
+        <div class="contact-card" data-animate="fade-up">
+          <div class="contact-avatar">MA</div>
+          <h3 class="contact-name">Manahil Amir</h3>
+          <p class="contact-role">Head of Registrations</p>
+          <a href="https://wa.me/923262995889" target="_blank" rel="noopener noreferrer" class="contact-btn-whatsapp">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.79 14.07c-.24.67-1.39 1.29-1.92 1.37-.51.08-1.17.11-3.79-.97-3.35-1.39-5.48-4.8-5.65-5.02-.17-.22-1.37-1.82-1.37-3.48 0-1.65.87-2.47 1.18-2.81.31-.34.68-.42.9-.42.23 0 .45.01.65.02.21.01.49-.08.77.58.28.67.97 2.37 1.05 2.54.08.17.14.37.03.59-.11.22-.17.36-.34.56-.17.2-.36.45-.51.61-.17.17-.35.36-.15.7.2.34.89 1.47 1.91 2.38 1.31 1.17 2.42 1.53 2.76 1.7.34.17.54.14.74-.08.2-.23.86-.99 1.09-1.34.23-.34.46-.28.77-.17.31.11 1.99.94 2.33 1.11.34.17.57.26.65.4.08.14.08.82-.16 1.49z"/></svg>
+            Chat on WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       Venue / General Info Section
+       ====================================================================== -->
+  <section class="venue-info-section">
+    <div class="container">
+      <div class="venue-grid">
+        <!-- Venue Details -->
+        <div class="venue-details" data-animate="fade-right">
+          <span class="section-badge">Conference Venue</span>
+          <h2 class="venue-title">NASTP Institute of Information Technology (NIIT)</h2>
+          <p class="venue-affiliation">A constituent college of Air University, under Pakistan Air Force &bull; NASTP Delta Lahore</p>
+
+          <div class="venue-address-box">
+            <div class="venue-address-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span><strong>Address:</strong> NASTP Institute of Information Technology (NIIT), National Aerospace Science and Technology Park (NASTP Delta), Lahore, Punjab, Pakistan</span>
+            </div>
+            <div class="venue-address-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span><strong>Conference Dates:</strong> 4–6 December 2026</span>
+            </div>
+            <div class="venue-address-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              <span><strong>Connectivity:</strong> Prime location in Lahore, easily accessible via Lahore Ring Road, Airport Road, and Cantt.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Google Maps Embed -->
+        <div class="map-card" data-animate="fade-left">
+          <div class="map-header">
+            <span class="map-header-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              NASTP Delta Lahore Location
+            </span>
+            <a href="https://maps.google.com/?q=NASTP+Delta+Lahore" target="_blank" rel="noopener noreferrer" class="map-link">
+              Open Full Map &rarr;
+            </a>
+          </div>
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3401.442848143279!2d74.3916965!3d31.5117978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919056d68b6b063%3A0x6b645e9944a141aa!2sNASTP%20Delta%2C%20Lahore!5e0!3m2!1sen!2spk!4v1700000000000!5m2!1sen!2spk"
+              width="100%"
+              height="380"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="NASTP Delta Lahore Google Map">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       Footer
+       ====================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Logo + Tagline -->
+        <div class="footer-col">
+          <img src="NIITMUN OFFICIAL LOGO.png" alt="NIITMUN Logo" class="footer-logo">
+          <p class="footer-tagline">
+            The premier Model United Nations conference by NIIT Literary Society, hosted at the state-of-the-art National Aerospace Science and Technology Park (NASTP Delta Lahore).
+          </p>
+          <div class="footer-social-row">
+            <a href="https://www.instagram.com/niit.mun" target="_blank" rel="noopener noreferrer" class="social-pill" title="Instagram @niit.mun">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              @niit.mun
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="agendas.html">Committees &amp; Agendas</a></li>
+            <li><a href="index.html#socials">Socials &amp; Activities</a></li>
+            <li><a href="sponsors.html">Sponsors</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Secretariat & Contact -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Secretariat</h4>
+          <div class="footer-contact-item">
+            <p class="footer-contact-name">Ali Raza</p>
+            <p class="footer-contact-role">President, NIIT Literary Society</p>
+            <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 6px;">
+              <a href="https://wa.me/923154295716" target="_blank" rel="noopener noreferrer" class="footer-whatsapp-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.79 14.07c-.24.67-1.39 1.29-1.92 1.37-.51.08-1.17.11-3.79-.97-3.35-1.39-5.48-4.8-5.65-5.02-.17-.22-1.37-1.82-1.37-3.48 0-1.65.87-2.47 1.18-2.81.31-.34.68-.42.9-.42.23 0 .45.01.65.02.21.01.49-.08.77.58.28.67.97 2.37 1.05 2.54.08.17.14.37.03.59-.11.22-.17.36-.34.56-.17.2-.36.45-.51.61-.17.17-.35.36-.15.7.2.34.89 1.47 1.91 2.38 1.31 1.17 2.42 1.53 2.76 1.7.34.17.54.14.74-.08.2-.23.86-.99 1.09-1.34.23-.34.46-.28.77-.17.31.11 1.99.94 2.33 1.11.34.17.57.26.65.4.08.14.08.82-.16 1.49z"/></svg>
+                Chat on WhatsApp
+              </a>
+              <a href="mailto:debate@niit.edu.pk" class="footer-action-link" style="display:inline-flex; align-items:center; font-size:0.82rem; color:var(--text-secondary); text-decoration:none;">debate@niit.edu.pk</a>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <p class="footer-contact-name">Bilal Asif</p>
+            <p class="footer-contact-role">UDG / Event Head</p>
+            <a href="https://wa.me/923424390904" target="_blank" rel="noopener noreferrer" class="footer-whatsapp-badge">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.79 14.07c-.24.67-1.39 1.29-1.92 1.37-.51.08-1.17.11-3.79-.97-3.35-1.39-5.48-4.8-5.65-5.02-.17-.22-1.37-1.82-1.37-3.48 0-1.65.87-2.47 1.18-2.81.31-.34.68-.42.9-.42.23 0 .45.01.65.02.21.01.49-.08.77.58.28.67.97 2.37 1.05 2.54.08.17.14.37.03.59-.11.22-.17.36-.34.56-.17.2-.36.45-.51.61-.17.17-.35.36-.15.7.2.34.89 1.47 1.91 2.38 1.31 1.17 2.42 1.53 2.76 1.7.34.17.54.14.74-.08.2-.23.86-.99 1.09-1.34.23-.34.46-.28.77-.17.31.11 1.99.94 2.33 1.11.34.17.57.26.65.4.08.14.08.82-.16 1.49z"/></svg>
+              Chat on WhatsApp
+            </a>
+          </div>
+          <div class="footer-contact-item">
+            <p class="footer-contact-name">Manahil Amir</p>
+            <p class="footer-contact-role">Head of Registrations</p>
+            <a href="https://wa.me/923262995889" target="_blank" rel="noopener noreferrer" class="footer-whatsapp-badge">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.79 14.07c-.24.67-1.39 1.29-1.92 1.37-.51.08-1.17.11-3.79-.97-3.35-1.39-5.48-4.8-5.65-5.02-.17-.22-1.37-1.82-1.37-3.48 0-1.65.87-2.47 1.18-2.81.31-.34.68-.42.9-.42.23 0 .45.01.65.02.21.01.49-.08.77.58.28.67.97 2.37 1.05 2.54.08.17.14.37.03.59-.11.22-.17.36-.34.56-.17.2-.36.45-.51.61-.17.17-.35.36-.15.7.2.34.89 1.47 1.91 2.38 1.31 1.17 2.42 1.53 2.76 1.7.34.17.54.14.74-.08.2-.23.86-.99 1.09-1.34.23-.34.46-.28.77-.17.31.11 1.99.94 2.33 1.11.34.17.57.26.65.4.08.14.08.82-.16 1.49z"/></svg>
+              Chat on WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 4: Institutional Patronage -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Organized By</h4>
+          <div class="footer-institutional-logos">
+            <div class="footer-inst-row">
+              <img src="AIR UNIVERSITY LOGO.png" alt="Air University" class="inst-logo-au">
+              <span>Air University</span>
+            </div>
+            <div class="footer-inst-row">
+              <img src="NIIT LOGO.png" alt="NIIT" class="inst-logo-niit">
+              <span>NIIT NASTP Delta</span>
+            </div>
+            <div class="footer-inst-row">
+              <img src="LITERARY SOCIETY LOGO.png" alt="NIIT Literary Society" class="inst-logo-litsoc">
+              <span>NIIT Literary Society</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 NIITMUN | NIIT Literary Society, NASTP Delta Lahore</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======================================================================
+       Scripts
+       ====================================================================== -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="animations.js"></script>
+</body>
+</html>

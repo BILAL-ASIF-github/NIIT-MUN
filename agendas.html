@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Committee Agendas — NIITMUN 2026</title>
+  <meta name="description" content="Explore the official committee agendas for NIIT Model United Nations (NIITMUN) 2026 Inaugural Edition at NASTP Delta Lahore.">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="shortcut icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+
+  <!-- Google Fonts: Cinzel + Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    /* In-page styling refinements for Committee Agendas */
+    .quick-jump-nav {
+      background: rgba(10, 22, 40, 0.85);
+      border-top: 1px solid var(--glass-border);
+      border-bottom: 1px solid var(--glass-border);
+      padding: 14px 0;
+      position: sticky;
+      top: 111px;
+      z-index: 990;
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+
+    .quick-jump-pills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .quick-jump-pill {
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.8px;
+      padding: 6px 16px;
+      border-radius: 20px;
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      color: var(--text-secondary);
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+    }
+
+    .quick-jump-pill:hover {
+      background: rgba(201, 168, 76, 0.15);
+      border-color: var(--gold);
+      color: var(--gold-light);
+      transform: translateY(-2px);
+    }
+
+    .agenda-section {
+      scroll-margin-top: 170px;
+    }
+
+    .agenda-logo-wrapper {
+      position: relative;
+      width: 140px;
+      height: 140px;
+      margin: 0 auto 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(201, 168, 76, 0.1) 0%, transparent 70%);
+      padding: 10px;
+    }
+
+    .agenda-badge {
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--gold);
+      background: rgba(201, 168, 76, 0.1);
+      border: 1px solid rgba(201, 168, 76, 0.25);
+      padding: 4px 14px;
+      border-radius: 20px;
+      margin-bottom: 18px;
+    }
+
+    .agenda-bottom-cta {
+      padding: 90px 0;
+      background: linear-gradient(180deg, var(--bg-primary) 0%, #060d18 100%);
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .agenda-cta-card {
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      border-radius: 20px;
+      padding: 50px 30px;
+      max-width: 820px;
+      margin: 0 auto;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .agenda-cta-title {
+      font-family: var(--font-heading);
+      font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+      margin-bottom: 14px;
+      color: var(--text-primary);
+    }
+
+    .agenda-cta-desc {
+      color: var(--text-secondary);
+      font-size: 1.1rem;
+      max-width: 620px;
+      margin: 0 auto 30px;
+      line-height: 1.6;
+    }
+
+    .agenda-cta-actions {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      color: var(--text-primary);
+      padding: 12px 28px;
+      border-radius: 30px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      letter-spacing: 0.5px;
+      transition: all 0.3s ease;
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: var(--gold);
+      color: var(--gold-light);
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 768px) {
+      .quick-jump-nav {
+        top: 97px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ======================================================================
+       Translucent Ticker Bar with Live Early Bird Countdown
+       ====================================================================== -->
+  <div class="ticker-bar">
+    <div class="ticker-content">
+      <span>★ EARLY BIRD DISCOUNT ENDS IN: <strong class="ribbon-countdown-badge"><span class="ribbon-days">--</span>d <span class="ribbon-hours">--</span>h <span class="ribbon-mins">--</span>m <span class="ribbon-secs">--</span>s</strong> ★ REGISTER NOW FOR DISCOUNTED RATES ★ 4–6 DECEMBER 2026 ★ NASTP DELTA LAHORE ★&nbsp;&nbsp;&nbsp;</span>
+      <span>★ EARLY BIRD DISCOUNT ENDS IN: <strong class="ribbon-countdown-badge"><span class="ribbon-days">--</span>d <span class="ribbon-hours">--</span>h <span class="ribbon-mins">--</span>m <span class="ribbon-secs">--</span>s</strong> ★ REGISTER NOW FOR DISCOUNTED RATES ★ 4–6 DECEMBER 2026 ★ NASTP DELTA LAHORE ★&nbsp;&nbsp;&nbsp;</span>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       Translucent Glassmorphic Navbar
+       ====================================================================== -->
+  <nav class="navbar">
+    <div class="navbar-inner container">
+      <a href="index.html" class="nav-logo" aria-label="NIITMUN Homepage">
+        <img src="NIITMUN OFFICIAL LOGO.png" alt="NIITMUN Official Logo">
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="agendas.html" class="active">Committees &amp; Agendas</a></li>
+        <li><a href="index.html#socials">Socials</a></li>
+        <li><a href="sponsors.html">Sponsors</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="https://www.instagram.com/niit.mun" target="_blank" rel="noopener noreferrer" class="nav-icon-link" aria-label="Instagram" title="Follow @niit.mun">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+        <a href="mailto:debate@niit.edu.pk" class="nav-icon-link" aria-label="Email Us" title="debate@niit.edu.pk">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+        <a href="index.html#register" class="btn-primary nav-cta">Register Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ======================================================================
+       Page Hero Section
+       ====================================================================== -->
+  <section class="page-hero" style="background-image: url('BGs/bg3.jpg')">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <h1 class="page-hero-title" data-animate="fade-up">Committee Agendas</h1>
+      <p class="page-hero-subtitle" data-animate="fade-up">Explore the pressing issues our committees will deliberate</p>
+    </div>
+  </section>
+
+  <!-- Quick Jump Sticky Bar -->
+  <div class="quick-jump-nav">
+    <div class="container">
+      <div class="quick-jump-pills">
+        <a href="#unga" class="quick-jump-pill">UNGA</a>
+        <a href="#unhrc" class="quick-jump-pill">UNHRC</a>
+        <a href="#uncsw" class="quick-jump-pill">UNCSW</a>
+        <a href="#pna" class="quick-jump-pill">PNA</a>
+        <a href="#crisis" class="quick-jump-pill">Crisis</a>
+        <a href="#unsc" class="quick-jump-pill">UNSC</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       Agenda Sections (6 Committees)
+       ====================================================================== -->
+
+  <!-- 1. UNGA -->
+  <section class="agenda-section" id="unga">
+    <div class="container">
+      <div class="agenda-content" data-animate="fade-up">
+        <div class="agenda-logo-wrapper">
+          <img src="Committees logos/UNGA.png" alt="UNGA" class="agenda-logo">
+        </div>
+        <div class="agenda-badge">General Assembly</div>
+        <h2 class="agenda-name">UNGA</h2>
+        <h3 class="agenda-full-name">United Nations General Assembly</h3>
+        <div class="agenda-text">
+          <p>The Responsibility to Protect (R2P): Balancing State Sovereignty and the Prevention of Mass Atrocities</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. UNHRC -->
+  <section class="agenda-section" id="unhrc">
+    <div class="container">
+      <div class="agenda-content" data-animate="fade-up">
+        <div class="agenda-logo-wrapper">
+          <img src="Committees logos/UNHRC.png" alt="UNHRC" class="agenda-logo">
+        </div>
+        <div class="agenda-badge">Human Rights</div>
+        <h2 class="agenda-name">UNHRC</h2>
+        <h3 class="agenda-full-name">United Nations Human Rights Council</h3>
+        <div class="agenda-text">
+          <p>Freedom of Expression versus Protection from Religious Hatred: Balancing Free Speech and the Prevention of Incitement</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. UNCSW -->
+  <section class="agenda-section" id="uncsw">
+    <div class="container">
+      <div class="agenda-content" data-animate="fade-up">
+        <div class="agenda-logo-wrapper">
+          <img src="Committees logos/UNCSW.png" alt="UNCSW" class="agenda-logo">
+        </div>
+        <div class="agenda-badge">Women's Rights &amp; Development</div>
+        <h2 class="agenda-name">UNCSW</h2>
+        <h3 class="agenda-full-name">United Nations Commission on the Status of Women</h3>
+        <div class="agenda-text">
+          <p>Faith, Freedom and Feminism: Should Religious Beliefs Influence Women's Rights and Gender-Equality Laws?</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. PNA -->
+  <section class="agenda-section" id="pna">
+    <div class="container">
+      <div class="agenda-content" data-animate="fade-up">
+        <div class="agenda-logo-wrapper">
+          <img src="Committees logos/PNA.png" alt="PNA" class="agenda-logo">
+        </div>
+        <div class="agenda-badge">Specialized Parliamentary Body</div>
+        <h2 class="agenda-name">PNA</h2>
+        <h3 class="agenda-full-name">Pakistan National Assembly</h3>
+        <div class="agenda-text">
+          <p>Federal Intervention and Provincial Autonomy: The Constitutional Limits of Emergency Powers and Governor's Rule (Articles 232 and 234) in Khyber Pakhtunkhwa</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Crisis -->
+  <section class="agenda-section" id="crisis">
+    <div class="container">
+      <div class="agenda-content" data-animate="fade-up">
+        <div class="agenda-logo-wrapper">
+          <img src="Committees logos/CRISIS.png" alt="Crisis" class="agenda-logo">
+        </div>
+        <div class="agenda-badge">Specialized Crisis Directive</div>
+        <h2 class="agenda-name">Crisis</h2>
+        <h3 class="agenda-full-name">Crisis Committee</h3>
+        <div class="agenda-text">
+          <p>Blackout: The Rise of a Rogue AI — A rogue AI has taken control of global power grids, financial systems, and military networks. The committee must contain it and restore human control over critical infrastructure.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. UNSC -->
+  <section class="agenda-section" id="unsc">
+    <div class="container">
+      <div class="agenda-content" data-animate="fade-up">
+        <div class="agenda-logo-wrapper">
+          <img src="Committees logos/UNSC.png" alt="UNSC" class="agenda-logo">
+        </div>
+        <div class="agenda-badge">Security Council</div>
+        <h2 class="agenda-name">UNSC</h2>
+        <h3 class="agenda-full-name">United Nations Security Council</h3>
+        <div class="agenda-text">
+          <p>Countering the Financing of Terrorism in the Middle East: Strengthening Sanctions, Financial Monitoring, and Regional Cooperation</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       Back to Committees CTA
+       ====================================================================== -->
+  <section class="agenda-bottom-cta">
+    <div class="container">
+      <div class="agenda-cta-card" data-animate="fade-up">
+        <h3 class="agenda-cta-title">Ready to Deliberate?</h3>
+        <p class="agenda-cta-desc">
+          Choose your preferred committee, study the agenda, and take part in historic debate at NASTP Delta, Lahore.
+        </p>
+        <div class="agenda-cta-actions">
+          <a href="index.html#committees" class="btn-secondary">
+            &larr; Back to Committees Overview
+          </a>
+          <a href="index.html#register" class="btn-primary">
+            Register as Delegate
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       Footer
+       ====================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Logo + Tagline -->
+        <div class="footer-col">
+          <img src="NIITMUN OFFICIAL LOGO.png" alt="NIITMUN Logo" class="footer-logo">
+          <p class="footer-tagline">
+            The flagship Model United Nations conference by NIIT Literary Society, hosted at the prestigious National Aerospace Science and Technology Park (NASTP Delta Lahore).
+          </p>
+          <div class="footer-social-row">
+            <a href="https://www.instagram.com/niit.mun" target="_blank" rel="noopener noreferrer" class="social-pill" title="Instagram @niit.mun">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              @niit.mun
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="agendas.html">Committees &amp; Agendas</a></li>
+            <li><a href="index.html#socials">Socials &amp; Activities</a></li>
+            <li><a href="sponsors.html">Sponsors</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Secretariat & Contact -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Secretariat</h4>
+          <div class="footer-contact-item">
+            <p class="footer-contact-name">Ali Raza</p>
+            <p class="footer-contact-role">President, NIIT Literary Society</p>
+            <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 6px;">
+              <a href="https://wa.me/923154295716" target="_blank" rel="noopener noreferrer" class="footer-whatsapp-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.79 14.07c-.24.67-1.39 1.29-1.92 1.37-.51.08-1.17.11-3.79-.97-3.35-1.39-5.48-4.8-5.65-5.02-.17-.22-1.37-1.82-1.37-3.48 0-1.65.87-2.47 1.18-2.81.31-.34.68-.42.9-.42.23 0 .45.01.65.02.21.01.49-.08.77.58.28.67.97 2.37 1.05 2.54.08.17.14.37.03.59-.11.22-.17.36-.34.56-.17.2-.36.45-.51.61-.17.17-.35.36-.15.7.2.34.89 1.47 1.91 2.38 1.31 1.17 2.42 1.53 2.76 1.7.34.17.54.14.74-.08.2-.23.86-.99 1.09-1.34.23-.34.46-.28.77-.17.31.11 1.99.94 2.33 1.11.34.17.57.26.65.4.08.14.08.82-.16 1.49z"/></svg>
+                Chat on WhatsApp
+              </a>
+              <a href="mailto:debate@niit.edu.pk" class="footer-action-link" style="display:inline-flex; align-items:center; font-size:0.82rem; color:var(--text-secondary); text-decoration:none;">debate@niit.edu.pk</a>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <p class="footer-contact-name">Bilal Asif</p>
+            <p class="footer-contact-role">UDG / Event Head</p>
+            <a href="https://wa.me/923424390904" target="_blank" rel="noopener noreferrer" class="footer-whatsapp-badge">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.79 14.07c-.24.67-1.39 1.29-1.92 1.37-.51.08-1.17.11-3.79-.97-3.35-1.39-5.48-4.8-5.65-5.02-.17-.22-1.37-1.82-1.37-3.48 0-1.65.87-2.47 1.18-2.81.31-.34.68-.42.9-.42.23 0 .45.01.65.02.21.01.49-.08.77.58.28.67.97 2.37 1.05 2.54.08.17.14.37.03.59-.11.22-.17.36-.34.56-.17.2-.36.45-.51.61-.17.17-.35.36-.15.7.2.34.89 1.47 1.91 2.38 1.31 1.17 2.42 1.53 2.76 1.7.34.17.54.14.74-.08.2-.23.86-.99 1.09-1.34.23-.34.46-.28.77-.17.31.11 1.99.94 2.33 1.11.34.17.57.26.65.4.08.14.08.82-.16 1.49z"/></svg>
+              Chat on WhatsApp
+            </a>
+          </div>
+          <div class="footer-contact-item">
+            <p class="footer-contact-name">Manahil Amir</p>
+            <p class="footer-contact-role">Head of Registrations</p>
+            <a href="https://wa.me/923262995889" target="_blank" rel="noopener noreferrer" class="footer-whatsapp-badge">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.79 14.07c-.24.67-1.39 1.29-1.92 1.37-.51.08-1.17.11-3.79-.97-3.35-1.39-5.48-4.8-5.65-5.02-.17-.22-1.37-1.82-1.37-3.48 0-1.65.87-2.47 1.18-2.81.31-.34.68-.42.9-.42.23 0 .45.01.65.02.21.01.49-.08.77.58.28.67.97 2.37 1.05 2.54.08.17.14.37.03.59-.11.22-.17.36-.34.56-.17.2-.36.45-.51.61-.17.17-.35.36-.15.7.2.34.89 1.47 1.91 2.38 1.31 1.17 2.42 1.53 2.76 1.7.34.17.54.14.74-.08.2-.23.86-.99 1.09-1.34.23-.34.46-.28.77-.17.31.11 1.99.94 2.33 1.11.34.17.57.26.65.4.08.14.08.82-.16 1.49z"/></svg>
+              Chat on WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 4: Institutional Patronage -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Organized By</h4>
+          <div class="footer-institutional-logos">
+            <div class="footer-inst-row">
+              <img src="AIR UNIVERSITY LOGO.png" alt="Air University" class="inst-logo-au">
+              <span>Air University</span>
+            </div>
+            <div class="footer-inst-row">
+              <img src="NIIT LOGO.png" alt="NIIT" class="inst-logo-niit">
+              <span>NIIT NASTP Delta</span>
+            </div>
+            <div class="footer-inst-row">
+              <img src="LITERARY SOCIETY LOGO.png" alt="NIIT Literary Society" class="inst-logo-litsoc">
+              <span>NIIT Literary Society</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 NIITMUN | NIIT Literary Society, NASTP Delta Lahore</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======================================================================
+       Scripts
+       ====================================================================== -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="animations.js"></script>
+</body>
+</html>
